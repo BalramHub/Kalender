@@ -1,0 +1,26 @@
+
+.tableheight {
+    height: 90%;
+    width: auto;
+}
+table {
+    width: 100%;
+  }
+  td {
+    width: 16.66%;
+    position: relative;
+  }
+  td:after {
+    content: '';
+    display: block;
+    margin-top: 100%;
+  }
+  td .content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(216, 0, 65);
+  }
+  
