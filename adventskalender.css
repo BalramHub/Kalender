@@ -1,4 +1,15 @@
 
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 255, 64);
+  font-size: 40px;
+  font-weight: bold;
+}
 .tableheight {
     height: 90%;
     width: auto;
