@@ -1,4 +1,9 @@
 
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  font-size: 100px;
+}
 .tableheight {
     height: 90%;
     width: auto;
