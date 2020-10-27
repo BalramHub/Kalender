@@ -1,4 +1,18 @@
+@media (min-width: 840px) {
+.mdl-cell--1-col, .mdl-cell--1-col-desktop.mdl-cell--1-col-desktop {
+  width: 300px !important;
+}
+}
+
+@media (min-width: 840px) {
+erstelltes Stylesheet
 .mdl-cell {
+  width: 300px;
+}
+}
+
+
+  .mdl-cell {
   box-sizing: border-box;
   background-color: #BDBDBD;
   height: 200px;
