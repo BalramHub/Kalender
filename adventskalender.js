@@ -1,6 +1,4 @@
 
-window.onload = function(){
-
     var date = new Date();
 
     var day = date.getDate();
@@ -14,5 +12,3 @@ window.onload = function(){
     document.getElementById("dateSelection").value = today;
     
     console.log("test");
-
-}
