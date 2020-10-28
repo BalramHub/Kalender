@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+  background-color: red !important;
+}
+
+
+
+
+
+
+
+
+=======
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 
@@ -107,6 +120,7 @@ header {
 	line-height: 2;
 }
 /* @media (min-width: 840px) {
+>>>>>>> d8b16f3c0a661dea62c3504c025c22f21505e6fd
 .mdl-cell {
     margin: 8px;
     margin-left: 6px;
