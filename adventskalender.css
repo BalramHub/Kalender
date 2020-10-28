@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+
+header {
+  display: inline-flex;
+}
+
+.date {
+  height: 35px;
+  margin-top: 43px;
+  margin-left: 20px;
+}
+
 .xop-section {
 	max-width: 1500px;
 	margin: 0 auto;
