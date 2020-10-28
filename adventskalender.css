@@ -1,3 +1,14 @@
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+  background-color: red !important;
+}
+
+
+
+
+
+
+
+
 .mdl-cell {
   box-sizing: border-box;
   background-color: #BDBDBD;
