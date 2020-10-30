@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 
-test
-
 header {
   display: inline-flex;
 }
@@ -64,9 +62,41 @@ header {
 	transform: scale(1.05); 
 }
 
+.xop-img-1 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../images/paint.jpg);
+}
 
+.xop-img-2 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../images/soap.jpg);
+}
 
+.xop-img-3 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../images/flower.jpg);
+}
 
+.xop-img-4 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../images/feather.jpg);
+}
+
+.xop-info {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+}
+
+.xop-info h3 {
+	font-family: 'Pacifico', cursive;
+	font-weight: 400;
+	color: #fff;
+	font-size: 42px;
+	margin: 0 30px;
+	padding: 100px 0 0 0;
+	line-height: 1.5;
+}
 
 .xop-info p {
 	font-family: 'Source Sans Pro', sans-serif;
