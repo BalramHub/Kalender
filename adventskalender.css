@@ -1,14 +1,80 @@
-.mdl-layout__header {
-  background-color: rgb(130, 12, 69);
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
+
+header {
+  display: inline-flex;
 }
 
-.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
-  background-color: red !important;
+.date {
+  height: 35px;
+  margin-top: 43px;
+  margin-left: 20px;
+}
+
+.xop-section {
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 1% 2%;
+}
+
+.xop-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.xop-grid:after {
+	clear: both;
+}
+
+.xop-grid:after, .xop-box:before {
+	content: '';
+	display: table;
 }
 
 
 
+.xop-grid li {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	margin: 7px;
+}
+
+.xop-box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+	-moz-transition:  0.3s ease-in-out, 
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out, ;
+}
+
+.xop-box:hover {
+	transform: scale(1.05); 
+}
+
+
+
+
+
+.xop-info p {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #fff;
+	padding: 4px 5px;
+	margin: 0 30px;
+	font-size: 14px;
+	line-height: 2;
+}
+/* @media (min-width: 840px) {
 .mdl-cell {
     margin: 8px;
     margin-left: 6px;
