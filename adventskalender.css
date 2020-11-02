@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 
+body {
+	background: #71d1ff;
+}
+
 header {
   display: inline-flex;
 }
@@ -49,7 +53,9 @@ header {
 	height: 100%;
 	position: relative;
 	cursor: pointer;
-    border-radius: 10px;
+	border-radius: 10px;
+	border: none;
+    outline:none;
     -webkit-transition: 0.3s ease-in-out, 
     -webkit-transform 0.3s ease-in-out;
 	-moz-transition:  0.3s ease-in-out, 
@@ -176,7 +182,7 @@ header {
 	color: #fff;
 	font-size: 42px;
 	margin: 0 30px;
-	padding: 100px 0 0 0;
+	/* padding: 100px 0 0 0; */
 	line-height: 1.5;
 	text-shadow: 2px 1px 5px #3F3F3F;
 }
