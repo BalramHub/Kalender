@@ -12,7 +12,7 @@ header {
 }
 
 .door-section {
-	max-width: 1500px;
+	max-width: 1750px;
 	margin: 0 auto;
 	padding: 1% 2%;
 }
@@ -64,23 +64,105 @@ header {
 
 .door-img-1 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-	url(../images/paint.jpg);
+	url(images/SVG/Zeichenfläche2.svg);
 }
 
 .door-img-2 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-	url(../images/soap.jpg);
+	url(images/SVG/Zeichenfläche3.svg);
 }
 
 .door-img-3 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-	url(../images/flower.jpg);
+	url(images/SVG/Zeichenfläche4.svg);
 }
 
 .door-img-4 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-	url(../images/feather.jpg);
+	url(images/SVG/Zeichenfläche5.svg);
 }
+
+.door-img-5 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche6.svg);
+}
+.door-img-6 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche7.svg);
+}
+.door-img-7 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche8.svg);
+}
+.door-img-8 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche9.svg);
+}
+.door-img-9 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche10.svg);
+}
+.door-img-10 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche11.svg);
+}
+.door-img-11 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche12.svg);
+}
+.door-img-12 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche13.svg);
+}
+.door-img-13 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche14.svg);
+}
+.door-img-14 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche15.svg);
+}
+.door-img-15 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche16.svg);
+}
+.door-img-16 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche17.svg);
+}
+.door-img-17 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche18.svg);
+}
+.door-img-18 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche19.svg);
+}
+.door-img-19 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche20.svg);
+}
+.door-img-20 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche21.svg);
+}
+.door-img-21 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche22.svg);
+}
+.door-img-22 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche23.svg);
+}
+.door-img-23 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche24.svg);
+}
+.door-img-24 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(images/SVG/Zeichenfläche25.svg);
+}
+
 
 .door-info {
 	position: absolute;
@@ -96,6 +178,7 @@ header {
 	margin: 0 30px;
 	padding: 100px 0 0 0;
 	line-height: 1.5;
+	text-shadow: 2px 1px 5px #3F3F3F;
 }
 
 .door-info p {
