@@ -4,8 +4,8 @@
 
 @media screen and (max-width: 1840px) and (orientation: landscape){
 	.door-grid li {
-		width: 150px !important;
-		height: 150px !important;
+		width: 130px !important;
+		height: 130px !important;
 	}
 
 	footer {
