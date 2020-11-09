@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 
-
 @media screen and (max-width: 1840px) and (orientation: landscape){
 	.door-grid li {
 		width: 130px !important;
@@ -20,6 +19,16 @@
 	}
 }
 
+
+
+
+header {
+	width: 100%;
+	position: absolute;
+	background: #00001bf2;
+	z-index: 9;
+	color: white;
+}
 
 /* *
 {
