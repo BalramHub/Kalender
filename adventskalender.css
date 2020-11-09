@@ -241,6 +241,11 @@ header {
 	url(images/SVG/Zeichenfläche3.svg);
 }
 
+.door-img-new-2 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(active/img01.PNG);
+}
+
 .door-img-3 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
 	url(images/SVG/Zeichenfläche4.svg);
@@ -330,6 +335,10 @@ header {
 .door-img-24 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
 	url(images/SVG/Zeichenfläche25.svg);
+}
+.door-img-new-24 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(active/img21.jpg);
 }
 
 
