@@ -2,10 +2,13 @@ const calendarContainer = document.querySelector(".container");
 
 const calendarDays = 24;
 
-const openDoor = (path, event) => {
-    event.target.parentNode.style.backgroundImage = `url(${path})`;
-    event.target.style.opacity = "0";
-    event.target.style.backgroundColor = "#222222";
+const openDoor = (path, number, event) => {
+    var dateUser = new Date(document.getElementById("dateSelection").value);
+    if(dateUser.getMonth() == 11 && dateUser.getDate() >= number){
+        event.target.parentNode.style.backgroundImage = `url(${path})`;
+        event.target.style.opacity = "0";
+        event.target.style.backgroundColor = "#222222";
+    }
 }
 
 const createCalendar = () => {
@@ -23,9 +26,11 @@ const createCalendar = () => {
 
         courseNumber = i + 1;
         // var loginName = "active";
-        let coursePath = `./active/${courseNumber}.jpg`;
-
-        calendarDoorText.addEventListener("click", openDoor.bind(null,  coursePath));
+        var coursePath = `./active/${courseNumber}.jpg`;
+        if(courseNumber < 10){
+            courseNumber = "0" + courseNumber;
+        }
+        calendarDoorText.addEventListener("click", openDoor.bind(null,  coursePath, courseNumber));
     }
 }
 
@@ -73,9 +78,9 @@ for(var i = 0; i < test.length; i++){
             txtTmp += " " + "door" + test[i][a];
         }
     }
-    console.log(txtTmp);
+    // console.log(txtTmp);
 }
-console.log(test);
+// console.log(test);
 
 function changeOrder() {
     var elem= document.getElementById("container");
@@ -88,12 +93,25 @@ function changeOrder() {
                 txtTmp[i] += " " + "door" + test[i][a];
             }
         }
-        console.log(txtTmp[i]);
+        // console.log(txtTmp[i]);
     }
 
 	elem.style.gridTemplateAreas = `"${txtTmp[0]}" "${txtTmp[1]}" "${txtTmp[2]}" "${txtTmp[3]}" "${txtTmp[4]}" "${txtTmp[5]}"`;
 }
 
+
+var date = new Date();
+var day = date.getDate();
+var month = date.getMonth() + 1;
+var year = date.getFullYear();  
+if (month < 10){
+    month = "0" + month;
+}
+if (day < 10){
+    day = "0" + day;
+}
+var today = year + "-" + month + "-" + day;       
+document.getElementById("dateSelection").value = today;
 
 window.addEventListener("load", createCalendar);
 window.addEventListener("load", changeOrder);
