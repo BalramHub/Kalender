@@ -22,7 +22,7 @@ const createCalendar = () => {
         calendarDoor.appendChild(calendarDoorText);
 
         courseNumber = i + 1;
-        // String loginName = "active";
+        // var loginName = "active";
         let coursePath = `./active/${courseNumber}.jpg`;
 
         calendarDoorText.addEventListener("click", openDoor.bind(null,  coursePath));
@@ -44,7 +44,6 @@ var test = makeArray(4,6, null);
 
 for(var i = 0 ; i < 6; i++){
     for(var a = 0; a < 4; a++){
-        // console.log(i,a)
         var getOut = true;
         do{
             var tmp = Math.floor(Math.random()*24+1);
