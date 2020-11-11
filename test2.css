@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  .container {
+      width: 800px;
+      height: 900px;
+      border: 5px solid black;
+      margin: 15px auto;
+      background-image: url("./Kalender.png");
+      background-size: cover;
+      box-shadow: 6px 6px 20px gray;
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      grid-template-rows: repeat(6, 1fr);
+  }
+  
+  .image {
+      background-image: none;
+      background-size: cover;
+      background-position: center;
+  }
+  
+  .text {
+      height: 100%;
+      width: 100%;
+      color: rgb(255, 0, 0);
+      padding: 12px;
+      border: 2px solid black;
+      transition: opacity 2s;
+  }
