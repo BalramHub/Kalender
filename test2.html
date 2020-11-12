@@ -9,7 +9,15 @@
 <body>
     <h1>Willi's Version ;)</h1>
     <input id = "dateSelection" type = "date">
+    <button onclick="openDialog()">Kalender ändern</button>
+    <dialog id = "uploadDialog">
+        Hallo
+        <input id = "inFile" name = "myFiles[]" type = "file" accept = "image/jpeg"/>
+        <button id = "uploadBtn"> Upload </button>
+        <button onclick="closeDialog()">X</button>
+    </dialog>
     <div id = "container" class="container">
+    <script type = "text/javascript" src = "upload.js"></script>
     <script src="test2.js"></script>
 </body>
 </html>

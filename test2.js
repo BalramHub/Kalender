@@ -24,13 +24,13 @@ const createCalendar = () => {
         calendarDoorText.innerHTML = i + 1;
         calendarDoor.appendChild(calendarDoorText);
 
-        courseNumber = i + 1;
+        dayNumber = i + 1;
         // var loginName = "active";
-        var coursePath = `./active/${courseNumber}.jpg`;
-        if(courseNumber < 10){
-            courseNumber = "0" + courseNumber;
+        var picturePath = `./active/${dayNumber}.jpg`;
+        if(dayNumber < 10){
+            dayNumber = "0" + dayNumber;
         }
-        calendarDoorText.addEventListener("click", openDoor.bind(null,  coursePath, courseNumber));
+        calendarDoorText.addEventListener("click", openDoor.bind(null,  picturePath, dayNumber));
     }
 }
 
@@ -112,6 +112,15 @@ if (day < 10){
 }
 var today = year + "-" + month + "-" + day;       
 document.getElementById("dateSelection").value = today;
+
+
+function openDialog(){
+    document.getElementById('uploadDialog').showModal();
+}
+
+function closeDialog(){
+    document.getElementById('uploadDialog').close();
+}
 
 window.addEventListener("load", createCalendar);
 window.addEventListener("load", changeOrder);
