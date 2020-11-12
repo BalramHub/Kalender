@@ -13,6 +13,8 @@
     <dialog id = "uploadDialog">
         Hallo
         <input id = "inFile" name = "myFiles[]" type = "file" accept = "image/jpeg"/>
+        <label for="dataName">Bitte Fenster angeben(zwischen 1 and 24):</label>
+        <input id = "dataName" type = "number" min = "1" max = "24">
         <button id = "uploadBtn"> Upload </button>
         <button onclick="closeDialog()">X</button>
     </dialog>

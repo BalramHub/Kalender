@@ -10,14 +10,21 @@ uploadBtn.addEventListener("click", function(){
     for(const file of inFile.files){
         // console.log(file.name.substr(file.name.length - 3));
         if (file.name.substr(file.name.length - 3).toLowerCase() == "jpg"){
-            console.log(file.name)
+            // Object.defineProperty(file, 'name', {
+            //     writable: true,
+            //     value: "abc.jpg"
+            //   });
+            //   Object.defineProperty(file, 'Path', {
+            //     writable: true,
+            //     value: "/uploads/1.jpg"
+            //   });
+            console.log(file);
             formData.append("myFiles[]", file);
         }
-
-        // formData.append("myFiles[]", file);
-
     }
 
+    var fileName = document.getElementById("dataName").value + ".jpg"
+    formData.append("dataName", fileName);
     xhr.open("post", "upload.php");
     xhr.send(formData);
 
