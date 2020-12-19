@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="test2.css" />
+    <link rel="stylesheet" href="
+    Adventskalender.css" />
     <title>Adventskalender</title>
 </head>
 <body>
     <section>
-    <header>
+    <header>76
     <h1>Willi's Version ;)</h1>
     <input id = "dateSelection" type = "date">
-    <button onclick="openDialog()">Kalender ändern</button>
+    <button onclick="document.getElementById('uploadDialog').showModal()">Kalender ändern</button>
+    
     <dialog id = "uploadDialog">
         <input id = "inFile" name = "myFiles[]" type = "file" accept = "image/jpeg"/>
         <label for="dataName">Bitte Fenster angeben(zwischen 1 and 24):</label>
         <input id = "dataName" type = "number" min = "1" max = "24">
         <button id = "uploadBtn"> Upload </button>
-        <button onclick="closeDialog()">X</button>
+        <button onclick="document.getElementById('uploadDialog').close()">X</button>
     </dialog>
 </header>
- 
+<button onclick="test()">test</button>
     <div id = "container" class="container">
     <script type = "text/javascript" src = "upload.js"></script>
-    <script src="test2.js"></script>
+    <script src="Adventskalender.js"></script>
     </div>
     <div class="set">
         <div><img src="images/Schnee/Schneeflocke1.png"></div>
