@@ -200,10 +200,11 @@ section .set div:nth-child(8)
   .container {
     z-index: 9;
     /* width: 800px; */
-    width: 1050px;
-    height: 900px;
+    width: 1250px;
+    height: 700px;
     border: 5px solid black;
-    margin: 15px auto;
+   /*  margin: 15px auto; */
+    margin-top: 30px;
     background-image: url("./Kalender.png");
     background-size: cover;
     box-shadow: 6px 6px 20px rgb(0, 0, 0);
