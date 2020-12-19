@@ -9,21 +9,21 @@
 </head>
 <body>
     <section>
-    <header>
-    <h1>Adventskalender</h1>
-    <input class="date_change" id = "dateSelection" type = "date">
-    <button class="change" onclick="openDialog()">Kalender ändern</button>
+    <header>76
+    <h1>Willi's Version ;)</h1>
+    <input id = "dateSelection" type = "date">
+    <button onclick="document.getElementById('uploadDialog').showModal()">Kalender ändern</button>
+    
     <dialog id = "uploadDialog">
         <input id = "inFile" name = "myFiles[]" type = "file" accept = "image/jpeg"/>
         <label for="dataName">Bitte Fenster angeben(zwischen 1 and 24):</label>
         <input id = "dataName" type = "number" min = "1" max = "24">
         <button id = "uploadBtn"> Upload </button>
-        <button onclick="closeDialog()">X</button>
+        <button onclick="document.getElementById('uploadDialog').close()">X</button>
     </dialog>
 </header>
- 
+<button onclick="test()">test</button>
     <div id = "container" class="container">
-    
     </div>
     <div class="set">
         <div><img src="images/Schnee/Schneeflocke1.png"></div>
