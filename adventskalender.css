@@ -7,6 +7,29 @@
   }
   
 
+  @media screen and (max-height: 800px) and (orientation: landscape){
+	.container {
+        width: 1070px !important;
+        height: 550px !important;
+    }
+}
+
+@media screen and (max-height: 620px) and (orientation: landscape){
+    section {
+        height: unset !important;
+    }
+    .container {
+        margin-top: 70px !important;
+    }
+}
+
+
+h3 {
+    display: none;
+    text-align: center;
+    font-size: 30px;
+}
+
 
 .change {
     position: absolute;
@@ -176,22 +199,29 @@ section .set div:nth-child(8)
         grid-template-rows: repeat(6, 1fr) !important;
     }
     h1 {
-        text-align: left;
-        font-size: 20px;
+        display: none;
+
+    }
+    
+    h3 {
+        display: block;
     }
     .change {
         position: absolute;
-        right: 25px;
-        top: 15px;
+        right: 10px;
+        top: 7px;
     }
     
     .date_change {
         position: absolute;
-        left: 25px;
-        top: 15px;
+        left: 10px;
+        top: 7px;
     }
     section {
         height: 100vh;
+    }
+    .text {
+        font-size: 20px !important;
     }
   }
 
@@ -222,7 +252,6 @@ section .set div:nth-child(8)
   }
   
   .text {
-
       height: 100%;
       width: 100%;
       color: rgb(255, 255, 255);
