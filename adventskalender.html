@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="adventskalender.css" />
     <title>Adventskalender</title>
 </head>
+
 <body>
     <section>
-    <header>
-    <h1>Adventskalender</h1>
-    <h3>AK</h3>
-    <input class="date_change" id = "dateSelection" type = "date">
-    <button class="change" onclick="document.getElementById('uploadDialog').showModal()">Kalender ändern</button>
-    
-    <dialog id = "uploadDialog">
-        <input id = "inFile" name = "myFiles[]" type = "file" accept = "image/jpeg"/>
-        <label for="dataName">Bitte Fenster angeben(zwischen 1 and 24):</label>
-        <input id = "dataName" type = "number" min = "1" max = "24">
-        <button id = "uploadBtn"> Upload </button>
-        <button onclick="document.getElementById('uploadDialog').close()">X</button>
-    </dialog>
-</header>
-    <div id = "container" class="container">
-    </div>
-    <div class="set">
-        <div><img src="images/Schnee/Schneeflocke1.png"></div>
-        <div><img src="images/Schnee/Schneeflocke2.png"></div>
-        <div><img src="images/Schnee/Schneeflocke3.png"></div>
-        <div><img src="images/Schnee/Schneeflocke4.png"></div>
-        <div><img src="images/Schnee/Schneeflocke1.png"></div>
-        <div><img src="images/Schnee/Schneeflocke2.png"></div>
-        <div><img src="images/Schnee/Schneeflocke3.png"></div>
-        <div><img src="images/Schnee/Schneeflocke4.png"></div>
-    </div>
-    <div class="set set2">
-        <div><img src="images/Schnee/Schneeflocke1.png"></div>
-        <div><img src="images/Schnee/Schneeflocke2.png"></div>
-        <div><img src="images/Schnee/Schneeflocke3.png"></div>
-        <div><img src="images/Schnee/Schneeflocke4.png"></div>
-        <div><img src="images/Schnee/Schneeflocke1.png"></div>
-        <div><img src="images/Schnee/Schneeflocke2.png"></div>
-        <div><img src="images/Schnee/Schneeflocke3.png"></div>
-        <div><img src="images/Schnee/Schneeflocke4.png"></div>
-    </div>
-    <div class="set set3">
-        <div><img src="images/Schnee/Schneeflocke1.png"></div>
-        <div><img src="images/Schnee/Schneeflocke2.png"></div>
-        <div><img src="images/Schnee/Schneeflocke3.png"></div>
-        <div><img src="images/Schnee/Schneeflocke4.png"></div>
-        <div><img src="images/Schnee/Schneeflocke1.png"></div>
-        <div><img src="images/Schnee/Schneeflocke2.png"></div>
-        <div><img src="images/Schnee/Schneeflocke3.png"></div>
-        <div><img src="images/Schnee/Schneeflocke4.png"></div>
-    </div>
+        <header>
+            <h1>Adventskalender</h1>
+            <h3>AK</h3>
+            <input class="date_change" id="dateSelection" type="date">
+            <button class="change button" onclick="document.getElementById('uploadDialog').showModal()">Kalender
+                ändern</button>
+
+            <dialog class="dialog" id="uploadDialog">
+                <input id="inFile" name="myFiles[]" type="file" accept="image/jpeg" />
+                <label class="options" for="dataName"> Bitte Fenster angeben (zwischen 1 and 24):</label>
+                <input id="dataName" type="number" min="1" max="24">
+                <button class="button" id="uploadBtn"> Upload </button>
+                <button class="close_button" onclick="document.getElementById('uploadDialog').close()">X</button>
+            </dialog>
+        </header>
+        <div id="container" class="container">
+        </div>
+        <div class="set">
+            <div><img src="images/Schnee/Schneeflocke1.png"></div>
+            <div><img src="images/Schnee/Schneeflocke2.png"></div>
+            <div><img src="images/Schnee/Schneeflocke3.png"></div>
+            <div><img src="images/Schnee/Schneeflocke4.png"></div>
+            <div><img src="images/Schnee/Schneeflocke1.png"></div>
+            <div><img src="images/Schnee/Schneeflocke2.png"></div>
+            <div><img src="images/Schnee/Schneeflocke3.png"></div>
+            <div><img src="images/Schnee/Schneeflocke4.png"></div>
+        </div>
+        <div class="set set2">
+            <div><img src="images/Schnee/Schneeflocke1.png"></div>
+            <div><img src="images/Schnee/Schneeflocke2.png"></div>
+            <div><img src="images/Schnee/Schneeflocke3.png"></div>
+            <div><img src="images/Schnee/Schneeflocke4.png"></div>
+            <div><img src="images/Schnee/Schneeflocke1.png"></div>
+            <div><img src="images/Schnee/Schneeflocke2.png"></div>
+            <div><img src="images/Schnee/Schneeflocke3.png"></div>
+            <div><img src="images/Schnee/Schneeflocke4.png"></div>
+        </div>
+        <div class="set set3">
+            <div><img src="images/Schnee/Schneeflocke1.png"></div>
+            <div><img src="images/Schnee/Schneeflocke2.png"></div>
+            <div><img src="images/Schnee/Schneeflocke3.png"></div>
+            <div><img src="images/Schnee/Schneeflocke4.png"></div>
+            <div><img src="images/Schnee/Schneeflocke1.png"></div>
+            <div><img src="images/Schnee/Schneeflocke2.png"></div>
+            <div><img src="images/Schnee/Schneeflocke3.png"></div>
+            <div><img src="images/Schnee/Schneeflocke4.png"></div>
+        </div>
     </section>
-    <script type = "text/javascript" src = "upload.js"></script>
+    <script type="text/javascript" src="upload.js"></script>
     <script src="adventskalender.js"></script>
 </body>
+
 </html>

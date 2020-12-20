@@ -1,33 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
     box-sizing: border-box;
     margin: unset;
-    font-family: 'Lobster', cursive;
-  }
-  
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-  @media screen and (max-height: 800px) and (orientation: landscape){
-	.container {
+
+@media screen and (max-height: 800px) and (orientation: landscape) {
+    .container {
         width: 1070px !important;
         height: 550px !important;
     }
 }
 
-@media screen and (max-height: 620px) and (orientation: landscape){
+@media screen and (max-height: 620px) and (orientation: landscape) {
     section {
         height: unset !important;
     }
+
     .container {
         margin-top: 70px !important;
     }
 }
 
+.options {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 2.5;
+}
+
+#inFile {
+    border: solid 2px;
+    border-radius: 3px;
+    width: 262px;
+}
+
+
+.dialog {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: #212121;
+    color: white;
+    border: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    h1 {
+        display: none;
+    }
+
+    h3 {
+        display: block !important;
+    }
+
+    .dialog {
+        width: 425px;
+    }
+}
+
+.button {
+    background-color: #2f8634;
+    border: none;
+    color: white;
+    padding: 5px 7px;
+    text-align: center;
+    outline: none;
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    background-color: #47a74c;
+}
+
+.close_button {
+    background-color: #800b0b;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    outline: none;
+    font-weight: bold;
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+
+.close_button:hover {
+    background-color: #af2d2d;
+}
+
+
+
 
 h3 {
     display: none;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
 }
 
 
@@ -41,47 +115,51 @@ h3 {
     position: absolute;
     left: 25px;
     top: 15px;
+    width: 123px;
+    background: #dcdcdc;
+    filter: invert(1);
+    border: none;
+    padding: 4px;
 }
 
 
 h1 {
     text-align: center;
     font-size: 40px;
+    font-family: 'Lobster', cursive;
 }
 
-  header
-  {
+header {
     position: absolute;
     top: 0;
-  /*   left: 40px; */
     width: 100%;
     z-index: 9;
     color: white;
     background: #00000091;
-  }
+}
 
-  .container:hover {
-      cursor: pointer;
-  }
-  section
-{
+.container:hover {
+    cursor: pointer;
+}
+
+section {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: radial-gradient(#010b55,#00073a);
+    background: radial-gradient(#010b55, #00073a);
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-section h2
-{
+
+section h2 {
     color: #fff;
     font-size: 8em;
     text-transform: uppercase;
 }
-section .set
-{
+
+section .set {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -89,106 +167,109 @@ section .set
     left: 0;
     pointer-events: none;
 }
-section .set div
-{
+
+section .set div {
     position: absolute;
     display: block;
 }
-section .set div:nth-child(1)
-{
+
+section .set div:nth-child(1) {
     left: 20%;
     animation: animate 15s linear infinite;
     animation-delay: -7s;
 }
-section .set div:nth-child(2)
-{
+
+section .set div:nth-child(2) {
     left: 50%;
     animation: animate 20s linear infinite;
     animation-delay: -5s;
 }
-section .set div:nth-child(3)
-{
+
+section .set div:nth-child(3) {
     left: 70%;
     animation: animate 15s linear infinite;
     animation-delay: 0s;
 }
-section .set div:nth-child(4)
-{
+
+section .set div:nth-child(4) {
     left: 0%;
     animation: animate 15s linear infinite;
     animation-delay: -5s;
 }
-section .set div:nth-child(5)
-{
+
+section .set div:nth-child(5) {
     left: 85%;
     animation: animate 18s linear infinite;
     animation-delay: -10s;
 }
-section .set div:nth-child(6)
-{
+
+section .set div:nth-child(6) {
     left: 0%;
     animation: animate 12s linear infinite;
 }
-section .set div:nth-child(7)
-{
+
+section .set div:nth-child(7) {
     left: 15%;
     animation: animate 14s linear infinite;
 }
-section .set div:nth-child(8)
-{
+
+section .set div:nth-child(8) {
     left: 60%;
     animation: animate 15s linear infinite;
 }
-@keyframes animate
-{
-    0%
-    {
+
+@keyframes animate {
+    0% {
         opacity: 0;
         top: -10%;
         transform: translateX(20px) rotate(0deg);
     }
-    10%
-    {
+
+    10% {
         opacity: 1;
     }
-    20%
-    {
+
+    20% {
         transform: translateX(-20px) rotate(45deg);
     }
-    40%
-    {
+
+    40% {
         transform: translateX(-20px) rotate(90deg);
     }
-    60%
-    {
+
+    60% {
         transform: translateX(20px) rotate(180deg);
     }
-    80%
-    {
+
+    80% {
         transform: translateX(-20px) rotate(180deg);
     }
-    100%
-    {   
+
+    100% {
         top: 110%;
         transform: translateX(20px) rotate(225deg);
     }
 }
-.set2
-{
+
+.set2 {
     transform: scale(2) rotateY(180deg);
     filter: blur(2px);
 }
-.set3
-{
-    transform: scale(0,8) rotateX(180deg);
+
+.set3 {
+    transform: scale(0, 8) rotateX(180deg);
     filter: blur(4px);
 }
 
-  @media screen and (orientation: portrait){
+@media screen and (orientation: portrait) {
+    .dialog {
+        width: 425px;
+    }
+
     .container {
         z-index: 9;
-        width: 300px  !important;
-        height: 440px  !important;
+        width: 300px !important;
+        height: 440px !important;
         border: 5px solid black;
         margin: 15px auto;
         background-image: url("./Kalender.png");
@@ -198,66 +279,64 @@ section .set div:nth-child(8)
         grid-template-columns: repeat(4, 25%) !important;
         grid-template-rows: repeat(6, 1fr) !important;
     }
+
     h1 {
         display: none;
-
     }
-    
+
     h3 {
         display: block;
     }
+
     .change {
         position: absolute;
         right: 10px;
-        top: 7px;
     }
-    
+
     .date_change {
         position: absolute;
         left: 10px;
-        top: 7px;
     }
+
     section {
         height: 100vh;
     }
+
     .text {
         font-size: 20px !important;
     }
-  }
+}
 
 
 
-  .container {
+.container {
     z-index: 9;
-    /* width: 800px; */
     width: 1250px;
     height: 700px;
     border: 5px solid black;
-   /*  margin: 15px auto; */
     margin-top: 30px;
     background-image: url("./Kalender.png");
     background-size: cover;
     box-shadow: 6px 6px 20px rgb(0, 0, 0);
     display: grid;
-    /* grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(6, 1fr); */
     grid-template-columns: repeat(6, 16.7%);
     grid-template-rows: repeat(4, 1fr);
-  }
-  
-  .image {
-      background-image: none;
-      background-size: cover;
-      background-position: center;
-  }
-  
-  .text {
-      height: 100%;
-      width: 100%;
-      color: rgb(255, 255, 255);
-      text-shadow: 2px 1px 5px #000000;
-      font-size: 35px;
-      padding: 12px;
-      border: 2px solid black;
-      transition: opacity 3s;
-  }
+}
+
+.image {
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    font-family: 'Lobster', cursive;
+    height: 100%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 1px 5px #000000;
+    font-size: 35px;
+    padding: 12px;
+    border: 2px solid black;
+    transition: opacity 3s;
+}
