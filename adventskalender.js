@@ -83,6 +83,12 @@ const openDoor = (path, number, event) => {
         event.target.parentNode.style.backgroundImage = `url(${path})`;
         event.target.style.opacity = "0";
         event.target.style.backgroundColor = "#222222";
+    }else{
+        // event.target.style.borderColor = "red";
+        event.target.style.borderColor = "red";
+        setTimeout(function(){
+            event.target.style.borderColor = "black"; },
+            700);
     }
 }
 
