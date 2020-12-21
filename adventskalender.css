@@ -330,6 +330,7 @@ section .set div:nth-child(8) {
     background-image: none;
     background-size: cover;
     background-position: center;
+    border: 2px solid black;
 }
 
 .text {
