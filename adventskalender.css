@@ -36,6 +36,10 @@
     width: 262px;
 }
 
+#dataName {
+    height: 27px;
+}
+
 
 .dialog {
     position: absolute;
@@ -108,13 +112,13 @@ h3 {
 
 .change {
     position: absolute;
-    left: 25px;
+    right: 25px;
     top: 15px;
 }
 
 .date_change {
     position: absolute;
-    right: 25px;
+    left: 25px;
     top: 15px;
     width: 123px;
     background: #dcdcdc;
@@ -268,7 +272,7 @@ section .set div:nth-child(8) {
         z-index: 9;
         width: 300px !important;
         height: 440px !important;
-        border: 5px solid black;
+        border: 4px solid black;
         margin: 15px auto;
         background-image: url("./Kalender.png");
         background-size: cover;
@@ -288,12 +292,12 @@ section .set div:nth-child(8) {
 
     .change {
         position: absolute;
-        left: 10px;
+        right: 10px;
     }
 
     .date_change {
         position: absolute;
-        right: 10px;
+        left: 10px;
     }
 
     section {
@@ -302,6 +306,7 @@ section .set div:nth-child(8) {
 
     .text {
         font-size: 20px !important;
+        border: 1px solid black !important;
     }
 }
 
@@ -311,7 +316,7 @@ section .set div:nth-child(8) {
     z-index: 9;
     width: 1250px;
     height: 700px;
-    border: 5px solid black;
+    border: 4px solid black;
     margin-top: 30px;
     background-image: url("./Kalender.png");
     background-size: cover;
