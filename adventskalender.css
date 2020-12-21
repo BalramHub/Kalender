@@ -342,6 +342,5 @@ section .set div:nth-child(8) {
     font-size: 35px;
     padding: 12px;
     border: 2px solid black;
-    transition: opacity 3s;
-    transition: border 0.5s;
+    transition: opacity 3s, border 0.5s;
 }
