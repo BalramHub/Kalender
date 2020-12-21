@@ -15,7 +15,7 @@
             <h1>Adventskalender</h1>
             <h3>AK</h3>
             <input class="date_change" id="dateSelection" type="date">
-            <button class="change button" onclick="document.getElementById('uploadDialog').showModal()">Kalender
+            <button class="change button" onclick="openDialogDoor()">Kalender
                 ändern</button>
 
             <dialog class="dialog" id="uploadDialog">
@@ -23,7 +23,7 @@
                 <label class="options" for="dataName"> Bitte Fenster angeben (zwischen 1 and 24):</label>
                 <input id="dataName" type="number" min="1" max="24">
                 <button class="button" id="uploadBtn"> Upload </button>
-                <button class="close_button" onclick="document.getElementById('uploadDialog').close()">X</button>
+                <button class="close_button" onclick="location.reload()">X</button>
             </dialog>
         </header>
         <div id="container" class="container">

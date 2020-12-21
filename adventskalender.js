@@ -64,6 +64,18 @@ function BrauchtNochEinenNamen(){
     }
 }
 
+//Funktion zum öffnen aller Türen durch den Dialog
+function openDialogDoor () {
+    document.getElementById('uploadDialog').showModal()
+    document.getElementById("container").style.gridTemplateAreas = '"door1 door2 door3 door4 door5 door6" "door7 door8 door9 door10 door11 door12" "door13 door14 door15 door16 door17 door18" "door19 door20 door21 door22 door23 door24"'
+    for(var i = 1; i < 25; i++){
+        var path = `./active/${i}.jpg`;
+        document.getElementById("door" + i).style.backgroundImage = `url(${path})`;
+        document.getElementById("doorText" + i).style.opacity = "100";
+        document.getElementById("doorText" + i).style.backgroundColor = "transparent";
+    }
+}
+
 //Funktion zum Türen öffnen
 const openDoor = (path, number, event) => {
     var dateUser = new Date(document.getElementById("dateSelection").value);
@@ -76,19 +88,20 @@ const openDoor = (path, number, event) => {
 
 //Funktion zum Kalender erstellen
 const createCalendar = () => {
-    for(var i = 0; i  < 24; i++) {
+    for(var i = 1; i  < 25; i++) {
         const calendarDoor = document.createElement("div");
         const calendarDoorText = document.createElement("div");
 
         calendarDoor.classList.add("image");
-        calendarDoor.style.gridArea = "door" + (i + 1);
+        calendarDoor.style.gridArea = "door" + (i);
+        calendarDoor.id = "door" + i;
         document.querySelector(".container").appendChild(calendarDoor);
-
         calendarDoorText.classList.add("text");
-        calendarDoorText.innerHTML = i + 1;
+        calendarDoorText.id = "doorText" + i;
+        calendarDoorText.innerHTML = i;
         calendarDoor.appendChild(calendarDoorText);
 
-        dayNumber = i + 1;
+        dayNumber = i;
         // var loginName = "active"; //maybe für einen login
         var picturePath = `./active/${dayNumber}.jpg`;
         if(dayNumber < 10){
