@@ -45,7 +45,7 @@
     position: absolute;
     top: 60px;
     left: 20px;
-    background-color: #212121;
+    background-color: #212121e0;
     color: white;
     border: none;
     width: 295px;
@@ -274,7 +274,7 @@ section .set div:nth-child(8) {
         height: 440px !important;
         border: 4px solid black;
         margin: 15px auto;
-        background-image: url("./Kalender.png");
+        background-image: url("./images/schneebackground.jpg");
         background-size: cover;
         box-shadow: 6px 6px 20px rgb(0, 0, 0);
         display: grid;
@@ -318,7 +318,7 @@ section .set div:nth-child(8) {
     height: 700px;
     border: 4px solid black;
     margin-top: 30px;
-    background-image: url("./Kalender.png");
+    background-image: url("./images/schneebackground.jpg");
     background-size: cover;
     box-shadow: 6px 6px 20px rgb(0, 0, 0);
     display: grid;
@@ -330,7 +330,7 @@ section .set div:nth-child(8) {
     background-image: none;
     background-size: cover;
     background-position: center;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .text {
