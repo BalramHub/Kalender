@@ -26,8 +26,7 @@ var today = year + "-" + month + "-" + day;
 document.getElementById("dateSelection").value = today;
 
 //Funktion zum Layout angeben + anpassen
-function BrauchtNochEinenNamen(){
-
+function LayoutAnpassen(isDialog){
     //Check ob Landscape oder Portrait
     if(window.innerHeight > window.innerWidth){
         width = 4;
@@ -35,6 +34,11 @@ function BrauchtNochEinenNamen(){
         width = 6;
     }
 
+    if(isDialog == true){
+        days.sort(function(a, b) {
+            return a - b;
+          });
+    }
     //Tage werden auf das Layout passend in ein 2D-Array aufgeteilt
     var tmparray = [];
     var j = 0;
@@ -67,7 +71,7 @@ function BrauchtNochEinenNamen(){
 //Funktion zum öffnen aller Türen durch den Dialog
 function openDialogDoor () {
     document.getElementById('uploadDialog').showModal()
-    document.getElementById("container").style.gridTemplateAreas = '"door1 door2 door3 door4 door5 door6" "door7 door8 door9 door10 door11 door12" "door13 door14 door15 door16 door17 door18" "door19 door20 door21 door22 door23 door24"'
+    LayoutAnpassen(true);
     for(var i = 1; i < 25; i++){
         var path = `./active/${i}.jpg`;
         document.getElementById("door" + i).style.backgroundImage = `url(${path})`;
@@ -116,11 +120,12 @@ const createCalendar = () => {
     }
 
     shuffleArray(days);
-    BrauchtNochEinenNamen();
+    LayoutAnpassen(false);
 }
 
 //Kalender kreieren
 window.addEventListener("load", createCalendar);
 
 //Listener auf Fenstergröße
-window.addEventListener('resize', BrauchtNochEinenNamen);
+window.addEventListener('resize', function(e) {
+    LayoutAnpassen(false);});
