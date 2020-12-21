@@ -44,6 +44,11 @@
     background-color: #212121;
     color: white;
     border: none;
+    width: 295px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 7px 7px 9px -4px #000000;
+    ;
 }
 
 
@@ -54,10 +59,6 @@
 
     h3 {
         display: block !important;
-    }
-
-    .dialog {
-        width: 425px;
     }
 }
 
@@ -107,13 +108,13 @@ h3 {
 
 .change {
     position: absolute;
-    right: 25px;
+    left: 25px;
     top: 15px;
 }
 
 .date_change {
     position: absolute;
-    left: 25px;
+    right: 25px;
     top: 15px;
     width: 123px;
     background: #dcdcdc;
@@ -262,9 +263,6 @@ section .set div:nth-child(8) {
 }
 
 @media screen and (orientation: portrait) {
-    .dialog {
-        width: 425px;
-    }
 
     .container {
         z-index: 9;
@@ -290,12 +288,12 @@ section .set div:nth-child(8) {
 
     .change {
         position: absolute;
-        right: 10px;
+        left: 10px;
     }
 
     .date_change {
         position: absolute;
-        left: 10px;
+        right: 10px;
     }
 
     section {
