@@ -1,33 +1,23 @@
-const inFile = document.getElementById("inFile");
-const uploadBtn = document.getElementById("uploadBtn");
-
-uploadBtn.addEventListener("click", function(){
+//File Upload (Single!)
+function upload(){
     const xhr = new XMLHttpRequest();
     const formData = new FormData();
+    var day = document.getElementById('dataName').value; 
+    var file = document.getElementById("inFile").files[0];
     
-    // console.log(inFile.files[0].name.substr(inFile.files[0].name.length - 3));
-
-    for(const file of inFile.files){
-        // console.log(file.name.substr(file.name.length - 3));
-        if (file.name.substr(file.name.length - 3).toLowerCase() == "jpg"){
-            // Object.defineProperty(file, 'name', {
-            //     writable: true,
-            //     value: "abc.jpg"
-            //   });
-            //   Object.defineProperty(file, 'Path', {
-            //     writable: true,
-            //     value: "/uploads/1.jpg"
-            //   });
-            console.log(file);
+    console.log(file.size);
+    var tooBig = file.size > 1000000;
+    var format = file.name.substr(file.name.length - 3).toLowerCase() == "jpg" || file.name.substr(file.name.length - 4).toLowerCase() == "jpeg";
+    if (format && !tooBig){
+        if(day <= 24 && day > 0){
             formData.append("myFiles[]", file);
+            formData.append("dataName", day + ".jpg");
+            xhr.open("post", "upload.php");
+            xhr.send(formData);
+        }else{
+            alert("Das Fenster muss im Bereich von 1 bis einschließlich 24 liegen!")
         }
+    }else{
+        alert("Die Hochgeladene Datei entspricht nicht den Anforderungen!")
     }
-
-    var fileName = document.getElementById("dataName").value + ".jpg"
-    formData.append("dataName", fileName);
-    xhr.open("post", "upload.php");
-    xhr.send(formData);
-
-    // console.log(document.getElementById("test").value);
-
-});
+}
