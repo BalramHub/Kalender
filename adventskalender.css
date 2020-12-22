@@ -306,7 +306,6 @@ section .set div:nth-child(8) {
 
     .text {
         font-size: 20px !important;
-        border: 1px solid !important;
     }
 }
 
@@ -341,6 +340,6 @@ section .set div:nth-child(8) {
     text-shadow: 2px 1px 5px #000000;
     font-size: 35px;
     padding: 12px;
-    border: 2px solid black;
+    border: 1px solid black;
     transition: opacity 3s, border 0.5s;
 }
