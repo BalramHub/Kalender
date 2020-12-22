@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <link rel="stylesheet" href="adventskalender.css" />
     <title>Adventskalender</title>
 </head>
+
 
 <body>
     <section>
@@ -21,8 +24,8 @@
             <dialog class="dialog" id="uploadDialog">
                 <input id="inFile" name="myFiles[]" type="file" accept="image/jpeg" />
                 <label class="options" for="dataName"> Bitte Fenster angeben (zwischen 1 und 24):</label>
-                <input id="dataName" type="number" min="1" max="24">
-                <button class="button" id="uploadBtn"> Upload </button>
+                <input id="dataName" type="number" min="1" max="24" onkeypress="numberFieldExtension(event)">
+                <button class="button" id="uploadBtn" onclick="upload()"> Upload </button>
                 <button class="close_button" onclick="location.reload()">X</button>
             </dialog>
         </header>
@@ -59,7 +62,6 @@
             <div><img src="images/Schnee/Schneeflocke4.png"></div>
         </div>
     </section>
-    <script type="text/javascript" src="upload.js"></script>
     <script src="adventskalender.js"></script>
 </body>
 

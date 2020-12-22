@@ -11,6 +11,21 @@ const shuffleArray = array => {
     return array;
 }
 
+//verhinder copy&paste ins Nummerfeld
+window.onload = () => {
+    document.getElementById('dataName').onpaste = e => e.preventDefault();
+}
+//verhindert die Eingabe von "." und mehr als zwei Ziffern
+function numberFieldExtension(event){
+    var code = (event.keyCode ? event.keyCode : event.which);
+    if(event.key === "Enter"){
+        upload();
+    }
+    if(code == 46 || document.getElementById('dataName').value.length >= 2){
+        event.preventDefault();
+    }
+}
+
 // Datepicker auf den aktuellen Stand bringen
 var date = new Date();
 var day = date.getDate();
@@ -129,3 +144,32 @@ window.addEventListener("load", createCalendar);
 //Listener auf Fenstergröße
 window.addEventListener('resize', function(e) {
     LayoutAnpassen(false);});
+
+
+
+//File Upload (Single!)
+function upload(){
+    const xhr = new XMLHttpRequest();
+    const formData = new FormData();
+    var day = document.getElementById('dataName').value; 
+    var file = document.getElementById("inFile").files[0];
+    
+    var tooBig = file.size > 1000000;
+    var format = file.name.substr(file.name.length - 3).toLowerCase() == "jpg" || file.name.substr(file.name.length - 4).toLowerCase() == "jpeg";
+    if (format && !tooBig){
+        if(day <= 24 && day > 0){
+            formData.append("myFiles[]", file);
+            if(day < 10 ){
+                day = day.substr(day.length-1);
+            }
+            formData.append("dataName", day + ".jpg");
+            xhr.open("post", "upload.php");
+            xhr.send(formData);
+            alert("Datei wurde hochgeladen")
+        }else{
+            alert("Das Fenster muss im Bereich von 1 bis einschließlich 24 liegen!")
+        }
+    }else{
+        alert("Die Hochgeladene Datei entspricht nicht den Anforderungen!")
+    }
+}
