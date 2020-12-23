@@ -125,8 +125,7 @@ const createCalendar = () => {
         calendarDoorText.innerHTML = i;
         calendarDoor.appendChild(calendarDoorText);
 
-        dayNumber = i;
-        // var loginName = "active"; //maybe für einen login
+        var dayNumber = i;
         var picturePath = `./active/${dayNumber}.jpg`;
         if(dayNumber < 10){
             dayNumber = "0" + dayNumber;
@@ -152,6 +151,12 @@ function upload(){
     if(document.getElementById("inFile").files.length != 0){
         const xhr = new XMLHttpRequest();
         const formData = new FormData();
+        //Errormessage/Successmessage zum Upload
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                alert(xhr.responseText);
+            }
+        }
         var day = document.getElementById('dataName').value; 
         var file = document.getElementById("inFile").files[0];
         var tooBig = file.size > 1000000;
@@ -163,14 +168,13 @@ function upload(){
                     day = day.substr(day.length-1);
                 }
                 formData.append("dataName", day + ".jpg");
-                xhr.open("post", "upload.php");
+                xhr.open("post", "upload.php", true);
                 xhr.send(formData);
-                alert("Datei wurde hochgeladen")
             }else{
                 alert("Das Fenster muss im Bereich von 1 bis einschließlich 24 liegen!")
             }
         }else{
-            alert("Die Hochgeladene Datei entspricht nicht den Anforderungen! (Maximal 1000000 Bytes groß und JPG-Format)")
+            alert("Die Hochgeladene Datei entspricht nicht den Anforderungen! (Maximal 1 MB groß und JPG-Format)")
         }
     }else{
         alert("Bitte eine Datei zum Upload auswählen");
