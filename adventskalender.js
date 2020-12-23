@@ -141,10 +141,7 @@ const createCalendar = () => {
 window.addEventListener("load", createCalendar);
 
 //Listener auf Fenstergröße
-window.addEventListener('resize', function(e) {
-    LayoutAnpassen(false);});
-
-
+window.addEventListener('resize', function(e) {LayoutAnpassen(false);});
 
 //File Upload (Single!)
 function upload(){
